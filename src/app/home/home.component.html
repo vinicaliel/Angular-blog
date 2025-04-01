@@ -4,19 +4,46 @@
     <app-menu-bar></app-menu-bar>
 
 </header>
-<app-menu-title></app-menu-title>
+<app-menu-title [title]="'Meu Portifólio'"></app-menu-title>
 
 <div class="container__articles">
     <div class="articles__main">
-        <app-big-card></app-big-card>
+        <app-big-card [title]="'Um Pouco Sobre Mim'" 
+        [bigImg]="'https://understand-islam.com/wp-content/uploads/2017/12/blogtitle.png'" 
+        [descMain]="'Me chamo Vinicius Caliel Nunes Passos, sou estudante de ciências da computação, estou a procura de experiência e conhecimento no mercado de trabalho na área de Back-end.'"></app-big-card>
+        
         
     </div>    
     
     <div class="articles__others">
-        <app-smal-card [title]="'Projeto Cadastro Funcionário'" [link]="'https://github.com/vinicaliel/Cadastro_Funcion-rio'"></app-smal-card>
-        <app-smal-card [title]="'Projeto Boards de Tarefas'" [link]="'https://github.com/vinicaliel/Desafio-Board-Tarefas'"></app-smal-card>
-        <app-smal-card [title]="'Projeto Angular Portifólio'" [link]="'https://github.com/vinicaliel/Angular-blog'"></app-smal-card>
+        <app-smal-card [img]="'https://adatech.dev.br/wp-content/uploads/2024/01/20240108-api-rest-destaque.jpg'"  [title]="'Projeto Cadastro Funcionário'" [link]="'https://github.com/vinicaliel/Cadastro_Funcion-rio'"></app-smal-card>
+        <app-smal-card [img]="'https://cms-gazzconecta.s3.amazonaws.com/gazzconecta/2020/08/04142433/education-lesson-planning-board.jpg'" [title]="'Projeto Boards de Tarefas'" [link]="'https://github.com/vinicaliel/Desafio-Board-Tarefas'"></app-smal-card>
+        <app-smal-card [img]="'https://consolelog.com.br/content/images/2024/01/angular-17.png'" [title]="'Projeto Angular Portifólio'" [link]="'https://github.com/vinicaliel/Angular-blog'"></app-smal-card>
         
     </div>
 
+
+
+
+
+
+</div>
+<app-menu-title [title]="'Sobre Mim'"></app-menu-title>
+
+<div class="experience__main">
+
+
+    <div class="experience">
+        <app-big-card [title]="'Minha Experiência'" 
+        [bigImg]="'https://media.licdn.com/dms/image/v2/D4D10AQFzpB4OX2QM0Q/videocover-low/B4DZSyePKJHYBA-/0/1738161064842?e=2147483647&v=beta&t=UpcOQCLcw1og3yXQzgGnnEq8bRuDnKVRueyOL9YFjwQ'" 
+        [descMain]="'Tenho experiência de 6 meses na empresa Compass.UOL, no cargo de estagiário em Engenharia em Análise de dados. Na empresa desenvolvi Skills de Comunicação, trabalho em equipe, Liderança em projetos, além de aprender sobre ferramentas importantes no meio da tecnologia, como Python, Docker, PostgresSQL, MySql, AWS cloud. '"></app-big-card>
+        
+    </div>
+    <div class="projectEx">
+         <app-smal-card [img]="'https://web.keyrus.com/hubfs/Amazon-Web-Services-AWS-Logo.png'"  [title]="'Aprendizado do Uso da Ferramenta AWS'" [link]="'https://github.com/vinicaliel/Cadastro_Funcion-rio'"></app-smal-card>
+        <app-smal-card [img]="'https://eprconsultoria.com.br/wp-content/uploads/2021/01/Analise-de-dados_BANNER.jpg'" [title]="'Aplicação do Conhecimento em Analise de Dados'" [link]="'https://github.com/vinicaliel/Desafio-Board-Tarefas'"></app-smal-card>
+        <app-smal-card [img]="'https://miro.medium.com/v2/resize:fit:1200/0*Pb-gM4nr-oT7SqYU.png'" [title]="'Uso do ETL para manipulação de Dados e criação de Dashboards'" [link]="'https://github.com/vinicaliel/Angular-blog'"></app-smal-card>
+        
+    </div>
+       
 </div>

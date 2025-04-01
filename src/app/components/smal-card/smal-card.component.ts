@@ -10,5 +10,6 @@ export class SmalCardComponent {
   @Input() title: string = '';
   @Input() imgSrc: string = '';
   @Input() link: string = '';
+  @Input() img: string = '';
 
 }
